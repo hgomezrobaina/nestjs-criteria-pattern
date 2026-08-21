@@ -1,0 +1,35 @@
+{
+  "name": "criteria-pattern-nest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Criteria pattern in NestJS: one contract to filter, sort and paginate any list",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "start": "node dist/main.js",
+    "dev": "npm run build && npm run start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "seed": "node scripts/seed.js",
+    "test:integration": "vitest run --config vitest.integration.config.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/mongoose": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "mongoose": "^8.9.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "mongodb-memory-server": "^11.2.0",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
